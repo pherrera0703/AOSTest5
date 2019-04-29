@@ -25,11 +25,12 @@ public class shopping {
 
 	@Test
 	public void speakers() {
-		
+
 		desktop.<DomElement>find("nimbusserver.BrowserWindow.speakersTxt").click(MouseButton.LEFT, new Point(100, 15));
-		
-		desktop.<DomLink>find("nimbusserver.BrowserWindow.Bose Soundlink Bluet").click(MouseButton.LEFT,
-				new Point(83, 11));
+
+		desktop.<DomElement>find("nimbusserver.BrowserWindow.20").click();
+		//desktop.<DomLink>find("nimbusserver.BrowserWindow.Bose Soundlink Bluet").click(MouseButton.LEFT,
+		//		new Point(83, 11));
 
 		DomElement _26999 = desktop.<DomElement>find("nimbusserver.BrowserWindow.$269 99");
 		Assert.assertEquals("$269.99", _26999.getProperty("textContents"));

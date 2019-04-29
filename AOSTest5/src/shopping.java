@@ -20,7 +20,7 @@ public class shopping {
 		// Go to web page 'http://nimbusserver:8000/#/'
 		BrowserBaseState baseState = new BrowserBaseState();
 		baseState.execute(desktop);
-		desktop.<BrowserApplication> find("//BrowserApplication").maximize();
+		desktop.<BrowserApplication> find("//BrowserApplication").maximize(); //maximize browser
 	}
 
 	@Test
